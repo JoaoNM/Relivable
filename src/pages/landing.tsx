@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 // import styles 
 import "../styles/landing.css";
 
+// eslint-disable-next-line
 const Landing: FC<{}> = ({}): ReactElement => {
     
     const [name, setName] = useState("");

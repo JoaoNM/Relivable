@@ -2,6 +2,20 @@
   text-align: center;
 }
 
+h1, h2, h3, h4, h5, h6, a, li, ul, p, span, div {
+  font-family: "Krylon";
+  color: white;
+}
+
+body {
+  background-color: #001004;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

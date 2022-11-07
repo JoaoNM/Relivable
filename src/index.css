@@ -7,6 +7,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: "Krylon";
+  src: local("KrylonRegular"),
+   url("./fonts/Krylon/Krylon-Regular.otf") format("truetype");
+  font-weight: normal;
+}
+  
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

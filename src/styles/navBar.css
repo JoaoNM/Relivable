@@ -1,0 +1,185 @@
+
+.nav_container {
+    position: fixed;
+    top: 0vh;
+    right: -100vw;
+    width: 80vw;
+    height: 60vh;
+    padding: 20vh 10vw;
+    background-color: #001004;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-around;
+    transition: all 0.3s ease-in-out;
+}
+.nav_container.open_menu {
+    right: 0vw;
+}
+
+.nav_container svg {
+    position: absolute;
+    right: -120px;
+    bottom: 0;
+    max-height: 90vh;
+    max-width: 80vw;
+    opacity: 0.8;
+}
+.nav_container a {
+    text-transform: uppercase;
+    font-size: 4vw;
+    position: relative;
+    display: inline-block;
+    align-self: flex-start;
+    text-decoration: none;
+}
+.nav_container a:hover {
+    text-shadow: -1px -1px 0px #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    color: #001004;
+    cursor: pointer;
+}
+.nav_container .active:hover::after {
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+.nav_container .active::after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    border-radius: 5px;
+    height: 2px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    bottom:0;
+    left: 0;
+}
+.cta_gradient::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(135deg, #F8E29A 0%, #A2E0DC 49.38%, #C6A1F8 100%);
+    mix-blend-mode: darken;
+}
+
+/* NAV OPENER STYLES  */
+
+.nav_opener {
+    padding: 3vw; 
+    position: fixed;
+    z-index: 3;
+}
+
+.hamburger_opener {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.hamburger_opener:hover {
+    cursor: pointer;
+}
+.hamburger_opener:hover .menu_line::after {
+    width: 100%;
+}
+.hamburger_opener:hover .menu_line::before {
+    width: 75%;
+}
+
+.hamburger_opener.cross:hover .menu_line {
+    rotate: 45deg;
+}
+.hamburger_opener.cross:hover .menu_line::after {
+    width: 100%;
+    rotate: -90deg;
+    top: 0px
+}
+.hamburger_opener.cross .menu_line::before {
+    width: 0%;
+}
+.hamburger_opener.cross .menu_line::after {
+    width: 0%;
+}
+
+/* HAMBURGER MENU */
+.menu_line {
+    background-color: #fff;
+    position: relative;
+    border-radius: 5px;
+    height: 2px;
+    width: 65%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+.menu_line::after {
+    content: '';
+    position: absolute;
+    border-radius: 5px;
+    height: 2px;
+    width: 75%;
+    background-color: #fff;
+    top: 12px;
+    transition: all 0.3s ease-in-out;
+}
+.menu_line::before {
+    content: '';
+    position: absolute;
+    border-radius: 5px;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    top: -12px;
+    transition: all 0.3s ease-in-out;
+}
+
+#L1 {
+    animation: 3s ease-in-out infinite alternate running decorMovement;
+}
+#L2 {
+    animation: 4s ease-in-out infinite alternate running decorMovement;
+}
+#L3 {
+    animation: 5s ease-in-out infinite alternate running decorMovement;
+}
+#L4 {
+    animation: 6s ease-in-out infinite alternate running decorMovement;
+}
+#L5 {
+    animation: 7s ease-in-out infinite alternate running decorMovement;
+}
+#L6 {
+    animation: 8s ease-in-out infinite alternate running decorMovement;
+}
+#L7 {
+    animation: 9s ease-in-out infinite alternate running decorMovement;
+}
+#L8 {
+    animation: 10s ease-in-out infinite alternate running decorMovement;
+}
+#L9 {
+    animation: 11s ease-in-out infinite alternate running decorMovement;
+}
+#L10 {
+    animation: 12s ease-in-out infinite alternate running decorMovement;
+}
+#L11 {
+    animation: 13s ease-in-out infinite alternate running decorMovement;
+}
+@keyframes decorMovement {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translate(-8px, -12px);
+    }
+  }

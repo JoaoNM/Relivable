@@ -2,6 +2,7 @@ import React, { FC, ReactElement } from 'react';
 // import styles 
 import "../styles/footer.css";
 
+// eslint-disable-next-line
 const Footer: FC<{}> = ({}): ReactElement => {
     return (
         <>

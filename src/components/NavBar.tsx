@@ -22,12 +22,12 @@ const NavBar: FC<NavBarProps> = ({active}): ReactElement => {
             </div>
             <div className={openMenu ? 'nav_container open_menu' : 'nav_container'}>
                 <MenuDecor />
-                <a className={active === 'relivable' ? 'active' : ''} href='/'
+                <a className={active === 'relivable' ? 'active' : ''} href='/' onClick={() => setOpenMenu(!openMenu)}
                 >relivable</a>
-                <a href='/'>pricing</a>
-                <a href='/' onClick={() => setOpenMenu(!openMenu)} >about</a>
-                <a href='/'>contact</a>
-                <a href='/' onClick={() => setOpenMenu(!openMenu)} className='cta_gradient'>get started</a>
+                {/* <a href='/'>pricing</a> */}
+                {/* <a href='/' onClick={() => setOpenMenu(!openMenu)} >about</a> */}
+                {/* <a href='/contact'>contact</a> */}
+                <a href='/' onClick={() => setOpenMenu(!openMenu)} className='cta_gradient'>More Coming Soon</a>
             </div> 
         </div>
     )
